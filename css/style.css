@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: "Poppins", serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-image: linear-gradient(to bottom, #2b2a2a, #000);
+}
+
+main {
+    background-image: linear-gradient(to bottom, #0e0d0d, #1b1919);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 0.5rem;
+    padding: 2rem;  
+    width: 722px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 480px;
+}
+
+.login {
+    margin-bottom: 1.7rem;
+}
+
+.login i {
+    font-size: 2.5rem;
+    color: white;
+}
+
+h1 {
+    color: white;
+}
+
+.login-redes-sociais {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-bottom: 2.5rem;
+}
+
+.login-redes-sociais button {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0.7rem 1.8rem;
+    border: none;
+    border: 1px solid rgba(255, 255, 255, 0.658);
+    border-radius: 2rem;
+    background-color: transparent;
+    color: #ffffffe6;
+    font-size: 0.9rem;
+    font-weight: 700;
+    font-family: "Poppins", serif;
+    width: 90%;
+}
+
+.login-redes-sociais button:hover {
+    outline: 1px solid #ffffff;
+    cursor: pointer;
+}
+
+.login-redes-sociais #google {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    margin-right: 1.7rem;
+    margin-left: -1.5rem;
+   
+}
+
+.login-redes-sociais button i {
+    margin-right: 1.2rem;
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+.login-redes-sociais .ri-facebook-fill {
+    background-color: #316FF6;
+    padding: 0.2rem;
+    border-radius: 50%;
+}
+
+.login-redes-sociais .ri-apple-fill  {
+    font-size: 1.3rem;
+}
+
+hr {
+    border: none;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(88, 71, 71, 0.877);
+    margin-bottom: 2.5rem;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 310px;
+}
+
+form label {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: left;
+    margin-bottom: 0.3rem;
+}
+
+form input {
+    padding: 1rem;
+    border-radius: 0.3rem;
+    border: none;
+    border: 1px solid rgba(255, 255, 255, 0.658);
+    background-color: transparent;
+    cursor: auto;
+    margin-bottom: 1.5rem;
+    width: 100%;
+    color: #ffffff;
+}
+
+form input:hover {
+    border-color: white;
+}
+
+form input::placeholder {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+form input:focus {
+    outline: 2.5px solid #ffffffe6;
+}
+
+form button {
+    border: none;
+    padding: 0.8rem;
+    border-radius: 2rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: black;
+    font-family: "poppins";
+    background-color: #1ed760;
+    margin-bottom: 2.5rem;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+form button:hover {
+    transform: scale(1.05); 
+    background-color: #29ec6d;
+}
+
+a {
+    color: #ffffff;  /* ao invés do branco deixar esse como oficial */
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+a:hover:not(footer a){
+    color: #13c250;
+}
+
+span {
+    color: #b3b3b3;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+footer{
+    margin-top: auto;
+    color: rgb(179, 179, 179);
+    font-size: 0.75rem;
+    padding: 2rem;
+    width: 100%;
+    background-color: #1b1919;
+}
+
+footer a {
+    color: rgb(179, 179, 179);
+    font-size: 0.6rem;
+}
+
+
+@media (max-width: 430px) {
+    main {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    hr {
+        width: 75%;
+    }
+
+    span {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        width: 40%;
+    }
+
+    .login-redes-sociais button {
+        width: 100%;
+    }
+    
+    .login-redes-sociais button i {
+        margin-right: 2.3rem;
+        margin-left: 1rem;
+    }
+
+    form {
+        width: 340px;
+    }
+
+    form input {
+        width: 100%; 
+    }
+
+    form button:hover{
+        transform: none;
+    }
+}
+
+@media (max-width: 375px) {
+    .login-redes-sociais button {
+        width: 90%;
+    }
+
+    .login-redes-sociais button i {
+        margin-right: 1.5rem;
+        margin-left: 0rem;
+    }
+
+    form {
+        width: 310px;
+    }
+
+}
+
+
+@media (max-width: 320px) {
+    .login-redes-sociais button {
+        width: 80%;
+        font-size: 0.85rem;
+    }
+
+    #google {
+        display: flex;
+        gap: 0.5rem;
+    }
+
+    img {
+        margin-left: 0rem;
+        margin-right: 0;
+    }
+
+    form {
+        width: 250px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
