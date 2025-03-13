@@ -173,7 +173,7 @@ form button:hover {
 }
 
 a {
-    color: #ffffff;  /* ao invés do branco deixar esse como oficial */
+    color: #ffffff;  
     font-size: 0.9rem;
     font-weight: 600;
     margin-bottom: 2rem;
@@ -208,7 +208,14 @@ footer a {
     main {
         margin-top: 0;
         margin-bottom: 0;
+        width: 100%;
     }
+
+    .content {
+        width: 100%;
+    }
+
+    
 
     hr {
         width: 75%;
@@ -218,7 +225,7 @@ footer a {
         display: flex;
         flex-direction: column;
         gap: 0.5rem;
-        width: 40%;
+        width: 60%;
     }
 
     .login-redes-sociais button {
